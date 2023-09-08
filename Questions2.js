@@ -5343,7 +5343,9 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
       // if answer is wrong or blank
       else{
         // color the answers red
+        correctAnswer.style.color = 'lightgreen';
         answerContainers[i].style.color = 'red';
+        
       }
     }
 
