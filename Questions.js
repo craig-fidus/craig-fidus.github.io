@@ -5346,7 +5346,6 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
       else{
         // color the answers red
         answerContainers[i].style.color = 'red';
-        answerContainers[i].querySelector('label[for=question'+i+'_'+correctAnswer+']').style.color = 'lightgreen';
       }
       answerContainers[i].querySelector('label[for=question'+i+'_'+correctAnswer+']').style.color = 'lightgreen';
     }
