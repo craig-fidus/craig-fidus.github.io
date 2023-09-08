@@ -5330,9 +5330,6 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
     for(var i=0; i< maxQuestions; i++) {
       // find selected answer
       userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-
-      // find correct answer
-      correctAnswer = questions[i].correctAnswer;
       
       // if answer is correct
       if(userAnswer===questions[i].correctAnswer){
@@ -5345,7 +5342,8 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
       // if answer is wrong or blank
       else{
         // color the answers red
-        answerContainers[i].style.color = 'red';      }
+        answerContainers[i].style.color = 'red';
+      }
     }
 
     // show number of correct answers out of total
