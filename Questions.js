@@ -5330,6 +5330,9 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
     for(var i=0; i< maxQuestions; i++) {
       // find selected answer
       userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+
+      // find correct answer
+      correctAnswer = questions[i].correctAnswer;
       
       // if answer is correct
       if(userAnswer===questions[i].correctAnswer){
@@ -5343,6 +5346,7 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
       else{
         // color the answers red
         answerContainers[i].style.color = 'red';
+        answerContainers[i].querySelector('label[for=question'+i+'_'+correctAnswer+']').style.color = 'lightgreen';
       }
     }
 
