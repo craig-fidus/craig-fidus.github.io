@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <!-- Include the questions.js file -->
+  <!-- <script src="myQuestions.js"></script> -->
+  <script defer src="questions.js"></script>
+  <script defer src="timer.js"></script>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <h1>Quiz</h1>
+  <div id="quiz"></div>
+  <div id="results"></div>
+  <div id="score"></div>
+  <button id="submit">Submit</button>
+  <div id="timer-box">
+    <p id="timer"></p>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button>
+    <button onclick="resetTimer()">Reset Timer</button>
+  </div>
+  <script>
+    document.getElementById("submit").addEventListener("click", function() {
+        stopTimer();
+    });
+</script>
+</body>
+</html>
