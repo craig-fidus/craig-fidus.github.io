@@ -5330,9 +5330,10 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
     for(var i=0; i< maxQuestions; i++) {
       // find selected answer
       userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+      correctAnswer = questions[i].correctAnswer;
       
       // if answer is correct
-      if(userAnswer===questions[i].correctAnswer){
+      if(userAnswer===correctAnswer){
         // add to the number of correct answers
         numCorrect++;
         
