@@ -5348,6 +5348,7 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
         answerContainers[i].style.color = 'red';
         answerContainers[i].querySelector('label[for=question'+i+'_'+correctAnswer+']').style.color = 'lightgreen';
       }
+      answerContainers[i].querySelector('label[for=question'+i+'_'+correctAnswer+']').style.color = 'lightgreen';
     }
 
     // show number of correct answers out of total
