@@ -5344,7 +5344,6 @@ function showResults(questions, quizContainer, resultsContainer, scoreContainer)
       else{
         // color the answers red
         answerContainers[i].style.color = 'red';
-        System.out.println("Correct answer" + correctAnswer );
       }
     }
 
